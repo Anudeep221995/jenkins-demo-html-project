@@ -12,7 +12,7 @@ pipeline {
         stage("Deploy my app") {
             steps {
                 echo "Deploying project. . ."
-                sh "cd jenkins-demo-html-project; sudo cp index.html /var/www/html/"
+                sh "cd jenkins-demo-html-project; cp index.html /var/www/html/"
             }
            
         }
