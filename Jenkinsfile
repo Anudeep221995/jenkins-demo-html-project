@@ -16,5 +16,12 @@ pipeline {
             }
            
         }
+        stage("Testing my app") {
+            steps {
+                echo "Testing project. . ."
+                sh "curl http://localhost:8080/"
+            }
+           
+        }
     }
 }
