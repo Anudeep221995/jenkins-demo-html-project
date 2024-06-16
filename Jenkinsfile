@@ -4,7 +4,7 @@ pipeline {
         stage("Clone my app") {
             steps {
                 echo "Project cloning. . ."
-                sh "git clone https://github.com/Anudeep221995/jenkins-demo-html-project.git"
+                sh "rm -rf jenkins-demo-html-project; git clone https://github.com/Anudeep221995/jenkins-demo-html-project.git"
                 echo "Project cloning successful"
             }
            
